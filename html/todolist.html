@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://cdn.bootcss.com/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body style="background-color: aliceblue">
+<div style="margin: 30px" align="center">
+    <img src="../img/todo_list.png" height="50" width="50"/>
+    <div>
+        <span class="timeDiv">Todo Task</span>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div id="main" class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <form id="task-form">
+                            <div class="input-field col s12">
+                                <input type="text" name="task" id="task">
+                                <label for="task">新建待办事项</label>
+                            </div>
+                            <input type="submit" value="添加" class="btn">
+                        </form>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <h5 id="task-title">待办事项：</h5>
+                    <div class="input-field col s12">
+                        <input type="text" name="filter" id="filter">
+                        <label for="filter">过滤事项</label>
+                    </div>
+                    <ul class="collection"></ul>
+                    <a href="#" class="clear-tasks btn red">清除所有事项</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="../js/todolist.js"></script>
+</body>
+</html>
+
